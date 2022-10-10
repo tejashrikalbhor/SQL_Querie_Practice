@@ -13,7 +13,9 @@ con.connect(function (err) {
     else {
         console.log("Connected!");
     }
-    con.query("CREATE TABLE STUDENT(SR_NO INT AUTO_INCREMENT PRIMARY KEY,NAME VARCHAR(255),ADDRESS VARCHAR(255),AGE INT(3),GRADE VARCHAR(1))",(err,result)=>{
+    // const sql = "CREATE TABLE STUDENT(SR_NO INT AUTO_INCREMENT PRIMARY KEY,NAME VARCHAR(255),ADDRESS VARCHAR(255),AGE INT(3),GRADE VARCHAR(1))";
+    const sql = "ALTER TABLE STUDENT ADD COLUMN PROF_NAME VARCHAR(255)";
+    con.query(sql,(err,result)=>{
         if(err){
             console.log("Error Message:",err)
         }
