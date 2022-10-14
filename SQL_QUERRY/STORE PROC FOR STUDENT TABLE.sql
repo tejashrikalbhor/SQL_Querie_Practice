@@ -1,0 +1,12 @@
+DELIMITER //
+CREATE PROCEDURE STUD_TEAC_DATA()
+BEGIN
+SELECT teacher.*,student.* FROM teacher
+INNER JOIN
+student
+ON
+teacher.T_ID = student.T_ID;
+END //
+DELIMITER ;
+
+CALL STUD_TEAC_DATA()
