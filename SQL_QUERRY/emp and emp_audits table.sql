@@ -11,7 +11,7 @@ AUDIT_DISCRIPTION VARCHAR(500));
 select * from EMP;
 select * from EMP_AUDIT
 
-insert into emp values(null ,'RAJVIR',6);
+insert into emp values(null ,'RAJ',86);
 UPDATE EMP SET NAME ="TEJASHRI KALBHOR" WHERE ID =1
 
 DELETE FROM EMP WHERE ID =5;
